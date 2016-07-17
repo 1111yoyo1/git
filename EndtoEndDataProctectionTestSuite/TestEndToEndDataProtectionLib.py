@@ -863,6 +863,5 @@ def ValidateRetValue(logger, expstatus, func, *args, **kwargs):
             else:
                 logger.Error("FAIL: command return 0x%xh/%d, expect command return 0x%xh/%d" % (
                     e.rawStatus, e.rawStatus, expstatus, expstatus))
-        logger.Info(e.msg)
 
     return errcnt
